@@ -5,7 +5,7 @@
 	    width: 100%;
 	    background: #fff;
 	    margin: auto;
-	    top: -10em;
+	    top: -7.4em;
 	    @include elevation();
 	    font-size: $SIZE-LEVEL-5;
 
@@ -53,5 +53,30 @@
 	    .infoContainerHeader{
 
 	    }
+	}
+
+	.actionCard{
+		position: relative;
+	    width: 100%;
+	    background: #fff;
+	    margin: auto;
+	    top: -6.4em;
+	    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+	    border-radius: 2px;
+	    font-size: 1.25rem;
+	    max-width: 220px;
+	}
+
+	.widgetHeader{
+		color: #FFF;
+    	background-color: #15abda;
+    	border-bottom: 1px solid #15abda;
+    	padding: 5px 10px;
+    	font-weight: 700;
+    	font-size: $SIZE-LEVEL-4;
+	}
+
+	.widgetContent{
+		padding: 10px;
 	}
 }

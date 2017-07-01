@@ -4,7 +4,9 @@ import { FlatButton , FontIcon } from 'material-ui';
 import { Link } from 'react-router';
 import styles from 'styles/components/common/card';
 import Icon from 'components/common/Icon';
-import Routes from 'routes'
+import Routes from 'routes';
+import {replaceParamInRoot} from 'utils';
+
 
 class OrganisationUpdateInfo extends Component{
 	constructor(props){
@@ -29,7 +31,7 @@ class OrganisationUpdateInfo extends Component{
           })
         }
 				</ul>
-        <div className={`col-xs-12 text-right`}><Link to={Routes.signin}><FlatButton primary={true} disableTouchRipple={true} label="VIEW" labelPosition="before"  icon={<FontIcon style={{'fontSize':'16px'}} className="fa fa-arrow-right" />}/></Link></div>
+        <div className={`col-xs-12 text-right`}><Link to={replaceParamInRoot(Routes.organization,'organizationname','oxford')}><FlatButton primary={true} disableTouchRipple={true} label="VIEW" labelPosition="before"  icon={<FontIcon style={{'fontSize':'16px'}} className="fa fa-arrow-right" />}/></Link></div>
 			</div>
 		);
 	}

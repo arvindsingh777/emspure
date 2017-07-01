@@ -17,7 +17,7 @@ class TabContainer extends Component{
 					<ul className={`nav ${styles.navTabs} col-sm-6 col-xs-12 col-sm-offset-3`}>
 						{
 							tabs.map((item,index) => {
-								return <li key={index} role="presentation"><Link activeClassName={styles.active} to={replaceParamInRoot(item.toLink,'username','user')}>{item.displayText}</Link></li>
+								return <li key={index} role="presentation"><Link activeClassName={styles.active} to={item.toLink}>{item.displayText}</Link></li>
 							})
 						}
 					</ul>
